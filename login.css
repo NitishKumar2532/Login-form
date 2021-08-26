@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: turquoise;
+}
+.container{
+    border-radius: 5px;
+    margin: 100px 25%;
+    width: 50%;
+    height: 100%;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.7);
+    border: 2px solid;
+}
+.container h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.content{
+    padding: 20px;
+    border: 2px solid rgb(184, 183, 183);
+    width: 100%;
+    box-shadow: 2px 0px 6px 2px rgba(0,0,0,0.7);
+    margin: 20px 0 30px 0;
+}
+.content input[type="text"],input[type="password"]{
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: whitesmoke;
+    border: none;
+}
+.content input[type="text"]:focus,input[type="password"]:focus{
+    outline: none;
+}
+button[type="submit"] {
+    padding: 7px;
+    background-color: teal;
+    border-radius: 5px;
+    width: 45%;
+    margin-left: 10px;
+    color: white;
+    border: none;
+
+}
+button[type="submit"]:hover,button[type="clear"]:hover{
+    color: whitesmoke;
+    background-color: turquoise;
+}
+button[type="clear"]{
+    margin-left: 10px;
+    background-color: teal;
+    border-radius: 5px;
+    padding: 7px;
+    width: 45%;
+    color: white;
+    border: none;
+}
+
+@media (max-width:760px){
+    .container{
+        margin: 120px 50px;
+        width: 80%;
+    }
+    button[type="submit"] {
+        width: 40%;
+    
+    }
+    button[type="clear"]{
+        width: 40%;
+    }
+
+}

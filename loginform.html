@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <h1>Login Page</h1>
+
+            <div class="content">
+                <label for="Un"><b>Email id</b></label>
+                <input type="text" placeholder="Enter your Username" class="Un" id="Un" required/>
+
+                <label for="Pwd"><b>Password</b></label>
+                <input type="password" name="pwd" id="pwd" placeholder="Enter your password" required/>
+
+                <button type="submit" onclick="success()">Submit</button>
+                <button type="Clear">Cancel</button>
+                <span id="alert"></span>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function success(){
+            alert("successfully login");
+        }
+    </script>
+</body>
+</html>
